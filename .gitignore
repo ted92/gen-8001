@@ -1,0 +1,14 @@
+
+*.aux
+
+*.synctex(busy)
+
+*.bbl
+
+*.gz
+
+*.out
+
+*.log
+
+*.blg

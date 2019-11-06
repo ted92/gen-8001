@@ -1,0 +1,784 @@
+\section{Introduction}
+%todo: talk about main difficulties in open research data in our field
+%todo: IDENTIFY these difficulties
+Before the advent of scientific journals, science was rarely public, and the advantages of making
+it open were less than its disadvantages. Some of the scientific papers were
+even coded in anagrams, so that only a restricted number of people could have access to it.
+Many scientists, including Galileo, Newton, Kepler, and Hooke, made their discoveries into
+something they could profit. Following the closed science logic though, it is difficult
+to identify ownership and priority of scientific discoveries: for instance,
+Leibniz and Newton both claimed priority in discovering calculus. Furthermore,
+Merton\,\cite{merton1942science} arguments in favor of open science are
+that, knowledge-creation is more efficient if scientists work together, and
+it is morally binding on the professional scientist.
+
+% however data were reproducible --> not after the advent of computer science and source code, especially machine learning
+
+In 1998, Steve Mann coined the word \emph{open science} and
+in modern times, scientific research is moving towards openness and free knowledge.
+However, there are still research data, journals, and paper which are not accessible to all.
+Data is not open due privacy and secrecy by for-profit organizations, and
+papers are not open because they are published in pay-walled journals.
+% before journals: scientists wanted to profit, but there was the priority and ownership problem
+
+Being our field of research computer science, and in particular
+big data on blockchain technology and cryptocurrencies,
+we want to enhance the main challenges of doing good scientific
+research when research data and source code are not openly accessible.
+In addition to the efficiency and priority problems listed above, excessively closed research data
+can lead to reproducibility issues, especially where scientific discoveries are driven by
+computationally heavy experiments performed on big data analysis.
+%
+We will show in this manuscript how closed code or closed
+research data lead to reproducibility problems, hence, bad science.
+
+\section{Open Science}
+Open science is the movement to make scientific research (i.e. data, software, publications)
+accessible to all levels of an inquiring society, amateur or professional\,\cite{woelfle2011openscience}.
+However, the term open science encapsulates many different concepts, such as: open educational resources,
+open access, open peer review, open data, open source, and open methodology\,\cite{Knoth2015}.
+%
+Also, according to Fecher et al. (2014)\,\cite{Fecher2014}, there are different open science schools.
+They can be for instance, oriented towards a pragmatic, public, or democratic approach, but
+the purpose is commonly identifiable in opening up the process of knowledge creation,
+making knowledge freely available for everyone, and enabling science to be accessible for citizens.
+%
+We focus in particular on the open access, and open data concepts, enhancing difficulties for
+scientists, amateur and professionals to contribute in scientific development and innovation, if research data are not
+openly accessible.
+
+Our research topic involves blockchain technology and cryptocurrencies.
+By definition of blockchain, research data are all
+public and always available. If we then perform searches in a topic of our interest, using
+public and open source web applications to explore research data, such as Dataverse\,\cite{crosas2011dataverse} or
+Google Dataset Search\footnote{\url{https://toolbox.google.com/datasetsearch}}, we can
+easily find the information we need about real-world implementation of blockchain
+technology, such as Bitcoin\,\cite{nakamoto2009bitcoin}.
+%
+However, not all data in different fields of computer science
+are easily accessible. If we perform research about privacy, or eHealth for instance,
+we will not get the same amount of results, and most of the research data are not public.
+%
+
+%todo: continue here
+
+%todo: check on google datasets search
+
+\section{Privacy Preserving}
+%todo: some data are sensitive and needs to be preserved and protected.
+
+% todo: talk about privacy online and how open access can affect the resarch or reserachers in certain fileds
+%todo: different open science schools\,\cite{Fecher2014}
+%However, people were still considering the web like an
+%imaginary world where everything was allowed, with
+%no direct consequences on the real world. This brought
+%some users to reshape and redefine their moral and ethical
+%constraints while surfing the net, leading
+%people to behave in a way they would
+%never do in real life. A possible reason for this
+%might be that some individuals
+%perceived the web as an anonymous platform where
+%they felt entitled to do whatever they wanted.
+%
+%Yet, it soon turned out that the Web was
+%not anonymous at all, and it was always possible
+%to find and track down the source of a particular "unknown"
+%user or activity. Because of this privacy preserving
+%on the web was, and still is, a hot research
+%topic. Web privacy aims to protect users'\,sensitive
+%data, in order to prevent companies and
+%governments to have access to their information.
+%
+%\subsection{Privacy on the Web}
+%\label{sec:webprivacy}
+%Enhancing web privacy led to new technologies, and
+%the Internet as we know it represents just the top of
+%an iceberg, the $4\%$ among all the websites and contents
+%available in it. This small percentage includes
+%contents that are indexed and accessible with regular
+%browsers such as Chrome, Firefox or Safari. The remaining
+%$96\%$ of the internet content is not
+%indexed, is only reachable either
+%having credentials, \emph{deep} web, or
+%through particular browsers such as
+%\emph{TOR (The Onion Router)}, \emph{dark}
+%web.
+%
+%The use of the dark web offers anonymity,
+%which is a huge advantage for users that want
+%to bypass internet censorship in countries
+%ruled by a totalitarian regime.
+%Yet, the dark web is also commonly associated
+%with most of the criminal activities
+%happening online, such as
+%\emph{Silk Road} or \emph{Sheep Marketplace}
+%markets, which are no any longer
+%available. These activities
+%include selling drugs, contraband of weapons, financing and
+%communication between terrorist
+%organizations and even engaging
+%professional serial killers for non-political targets.
+%
+%%todo: check this sentence 
+%Preserving and enhancing privacy
+%led then to a considerable backlash regarding
+%moral and ethical behavior on the web.
+%However, demands for increasing privacy on the web
+%kept growing, especially with the upcoming of social
+%media and also the recent scandal of Cambridge
+%Analytica\footnote{https://nyti.ms/2HP4Dr3},
+%where Facebook users'\,sensitive data was used by a
+%private company to influence political elections.
+%Because of that, people became more
+%sensitive and concerned about where or
+%how their data was being stored.
+%Among the most sensitive data are
+%money exchange, which indirectly includes
+%information on costumers preferences, and medical
+%data.
+%
+%Privacy has been improved in order to avoid situations like
+%Cambridge Analytica, but at the same time, unscrupulous users
+%might exploit it even further for criminal activities.
+%To this extent, how much can we
+%consider true the sentence \emph{"You don't need privacy
+%	if you have nothing to hide"}? And again,
+%\emph{"How ethical would it be to dig research
+%	in privacy preserving and anonymity if the only ones
+%	that really care about it are unscrupulous entities?"}.
+%
+%\subsection{Privacy with Blockchain and Cryptocurrencies}
+%A new technology that includes
+%privacy, money exchange,
+%medical data and anonymity already exists, the \emph{blockchain}.
+%Blockchain technology is broadly implemented in
+%the financial sector by the so-called cryptocurrencies, or 
+%\emph{crypto} for short.
+%However, the concept of blockchain
+%might have different interpretations according
+%to which context it is used in:
+%\begin{description}
+%	\item[\textbf{Computer Science:}] protocol and encryption technology
+%	for securely storing data on a distributed network.
+%	\item[\textbf{Business/Finance:}] distributed ledger and the technology
+%	underlying the digital currencies.
+%	\item[\textbf{Technologists:}] driving force behind the next generation
+%	of the internet.
+%	\item[\textbf{Others:}] it is a tool to radically reshaping society to
+%	a more decentralized world.
+%\end{description}
+%
+%Blockchain protocol is implemented mostly
+%in cryptocurrencies, such as Bitcoin\,\cite{nakamoto2009bitcoin},
+%Ethereum\,\cite{buterin2013eth},
+%or Monero\,\cite{saberhagen2013monero}.
+%The latter can provide a trusted money
+%exchange over an untrusted communication channel,
+%ignoring a central authority for transaction
+%approval. Such breakthrough technology
+%could potentially reshape society in a more equal and
+%decentralized way. Hence, the blockchain can be
+%fundamental to integrate medical data
+%coming from different sources,
+%or it can be used to store globally digital
+%identities so that people around the globe
+%can trust each other by just checking the blockchain.
+%Furthermore it could also be applied
+%in farming, finance and wherever there is the need
+%to trust third parties without having
+%a central authority to mediate.
+%
+%As every new technology though, blockchain
+%applied to cryptocurrencies opened
+%a new path for unscrupulous entities that want to
+%operate money exchange in the dark web in total anonymity
+%and without traceability (only with specific cryptocurrencies).
+%Consequently, cryptocurrency exchange challenges
+%the current paradigm of financial transactions by safeguarding
+%individuals'\,privacy during money exchange.
+%While this is good for people concerned
+%about the possibility of being tracked online, it has
+%also boosted illegitimate trade.
+%
+%In this paper we discuss the problem
+%of privacy in the dark web and
+%blockchain technology,
+%following a consequentionalist theory,
+%\emph{utilitarianism}~\cite{bentham1996collected},
+%rather than a deontological~\cite{o1993kantian} approach.
+%We believe that a deontological
+%approach is too absolutist,
+%thus it is wrong to consider an action
+%to be morally acceptable or not \emph{a priori}.
+%We then focus on judging the
+%moral consequences of an action
+%rather than the action \emph{per se},
+%so our approach will evaluate
+%pros and cons of technologies
+%such the dark web, cryptocurrencies and
+%blockchain. To decide whether
+%a consequence of an action is good,
+%we judge it on how much this action
+%will benefit the majority or
+%produce a greater good.
+%
+%Specifically, Section~\ref{sec:relatedresearch}
+%targets on describing my research
+%with its ethical implications,
+%Section~\ref{sec:malicous}
+%focuses to the possible backlashes that
+%privacy reinforcement have caused and might
+%cause in the future,
+%while in Section~\ref{sec:needprivacy}
+%we will discuss the reasons why we should
+%reinforce privacy on the web.
+%Finally, we will analyze and discuss the ethical
+%aspects of having privacy in blockchain systems,
+%given our opinion in this regard.
+%In short, we can discuss our version of the
+%\emph{trolley dilemma}~\cite{foot2002moral} applied to
+%blockchain and privacy, by asking
+%ourselves the following question:
+%\begin{quotation}
+%\emph{"Should we do research which enables privacy but
+%	at the same time could be exploited for illegal activities?"}
+%\end{quotation}
+%
+%\section{Related Research}
+%\label{sec:relatedresearch}
+%My research is focused on analyzing and
+%performing longitudinal studies on
+%large scale systems based on blockchain
+%technology, such as Bitcoin. The ultimate goal
+%of my research is to build
+%a model and to find a way to improve the blockchain.
+%More specifically, I am focusing on
+%improvements regarding bad performances
+%and lack of scaling\footnote{In Bitcoin for instance, it is only
+%possible to have approved from $3$ to $7$ transactions
+%per second.}.
+%
+%However, the use of Cryptocurrencies had
+%some negative implications, since they
+%were mostly involved in contraband on
+%dark and anonymous markets, used
+%for engaging hitmen or for the communication
+%between terrorists organizations.
+%These latter implications are the base of
+%the dilemma outlined in Section~\ref{sec:introduction}.
+%
+%A lot of individuals
+%started to use cryptocurrencies
+%that rely on blockchain technology because
+%Bitcoin claimed that fees were
+%lower than regular currencies
+%and sometimes equal to zero. However, part of my research
+%shows that this is not entirely true and
+%after $2016$ there was a \emph{zero-fee
+%	transaction}\footnote{Transactions with commission fee of $0$ Bitcoin.}
+%eviction enforced by the majority of the
+%\emph{mining pools}\footnote{A mining pool in Bitcoin
+%	is a set of computers which aim to
+%	solve computational puzzles in order to approve
+%	transactions.} in the
+%network, making the use of cryptocurrencies
+%more attractive to people who wanted
+%to remain anonymous rather than saving
+%money in transaction fees. Furthermore,
+%currencies like Bitcoin are notorious
+%for their low throughput, being able to process
+%in between $3$ to $7$ transactions per second
+%while circuits such VISA can handle $2000$\,txs/s.
+%By improving their scalability, researchers might
+%incentive criminal activities. Our research question
+%in this regard then is the following:
+%\begin{quotation}
+%\emph{Is it safe to extend
+%	the use and the scale of cryptocurrencies
+%	knowing that most of
+%	transactions are performed by individuals who
+%	want to keep their anonymity?}
+%\end{quotation}
+%
+%\section{Supporting lack of Privacy}
+%\label{sec:malicous}
+%As Viseu et. al~\cite{Viseu2004PrivacyOnline} say,
+%the issue of privacy is the key
+%to understand online behavior.
+%Sometimes, to achieve values such as freedom of
+%thoughts, anonymity and privacy
+%should be preserved, to avoid that
+%someone gets targeted because of what
+%he or she might say. However, anonymity
+%and privacy could also be exploited by
+%unscrupulous people who want to
+%act unethically without being punished.
+%
+%History teaches us the consequences of what
+%happens when a new technology is misused.
+%Whenever new technologies,
+%not only in data protection but in any field,
+%reached the public and became widely available,
+%they might be used for criminal activities.
+%Let's take the wheel as an example; it is
+%one of the greatest and most ancient inventions
+%of human history, yet it is also used for
+%machine guns in the battlefield.
+%
+%However, this is not a reason to stop
+%progress and research, even if we should
+%ask ourselves whether we are going too far and
+%if a new technology would have more negative
+%than beneficial effects.
+%However, as Dan Brock~\cite{brock1998}
+%states that
+%sometimes ethical pros and cons might
+%be sufficiently balanced and uncertain
+%that there is not an ethically decisive case
+%for or against a certain topic.
+%Therefore, in order to make an ethical decision
+%on web data protection, we should illustrate what
+%progress was made, and discuss the ethical
+%implications of deep/dark web and blockchain
+%technologies.
+%
+%%todo: add alt-right argument against freedom of speech?
+%
+%\subsection{Nothing-to-Hide, Nothing to Fear}
+%\label{sec:deepweb}
+%Progress in privacy and data protection
+%came as an "extension" of
+%the Internet. It enabled
+%people to post content without being publicly
+%exposed (deep web), and therefore keeping
+%their privacy, or even posting completely
+%anonymously (dark web).
+%All contents in the
+%deep web have information that
+%is not accessible to everyone,
+%such as, medical data, bank statements,
+%enterprise ledgers.
+%For this information to be protected,
+%the entity storing this data
+%must be trusted. Even if this data
+%is not accessible to everyone,
+%once the access is granted the information
+%is no longer anonymous.
+%The dark web on the other hand,
+%provides a higher level of privacy, making it harder
+%to link the activities on the web
+%with their perpetrators.
+%This is made possible thanks to a
+%technology called
+%\emph{onion routing}.
+%
+%Onion routing was originally developed
+%by the US government in the $1990$s, and
+%as Anthony Cuthbertson~\cite{fishingDarkweb}
+%states in The Independent, its
+%purpose was initially to assist
+%intelligence agencies, but since the degree
+%of anonymity increases together with the number of
+%computers participating in the network,
+%they made it public. However, by $2010$s,
+%the dark web had become a hive of illegal activity,
+%making it difficult even for authorities to check
+%and link criminal activities to physical entities.
+%
+%With this technology, marketplaces such \emph{Silk Road},
+%\emph{Dream Market}, or \emph{Colton} emerged.
+%In those markets it
+%was possible to find any kind of item,
+%legal or illegal, any kind of drug that had never
+%been sold anywhere else and also
+%weapons, stolen credit cards, fake documents,
+%human slaves, blood, hitmen, and even human body
+%parts and organs.
+%
+%Anonymity and privacy also
+%enabled dangerous behaviors on the web,
+%where unscrupulous individuals could
+%act undisturbed. They were
+%seeking for targets, often teenagers,
+%with the purpose of manipulate their
+%minds, pushing
+%their action to the extreme by killing other
+%people or commit suicide, like it happened in
+%\emph{blue whale}\,\cite{Mukhra2019},
+%\emph{momo}\footnote{\url{https://ind.pn/2Mq4vB8}} or
+%\emph{slender man}\,\cite{chess2014folklore} case.
+%
+%This misuse of the web with its implications,
+%opened a debate whether privacy should
+%be preserved or not. Eric Schmidt, former
+%CEO of Google, argued
+%\emph{"If you have something that you don't want anyone to know,
+%	maybe you shouldn't be doing it in the first place \dots "}
+%and again, \emph{"\dots it's important, for example that
+%	we are all subject in the United States
+%	to the Patriot Act. It is possible that that information
+%	could be made available to the authorities."}
+%
+%This concept is defined as the \emph{nothing-to-hide}
+%argument which states that \emph{"government surveillance do not
+%	threaten privacy unless they uncover illegal
+%	activities\footnote{Definition from \url{https://bit.ly/2EZ6Osd}}"}.
+%People who support this argument
+%accept the fact that companies like
+%Google or Amazon are collecting information in order to
+%improve their services. For instance, knowing
+%the location of an individual helps
+%to provide an accurate weather forecast
+%or to give information on interesting
+%events happening nearby, according
+%on what a particular user likes to do or buy.
+%Hence, lack of privacy makes data available
+%to statistical analysis in order to improve services,
+%and also gives authorities access to information
+%on criminal activities.
+%
+%%todo: One shady marketplace called Gold and Diamonds claims to sell everything from blood diamonds to rhino horns, justifying the sale of such items by pointing to the questionable ethical records of multinational companies such as Apple and Pfizer. While it’s possible in some cases to track down individual vendors and customers, one dark web expert explained to me that it’s much harder to police the site’s administrators due to the lack of a centralised entity running them. "They’re decentralised, which means that websites such as drug forums or hacking marketplaces are being duplicated between all visitors and basically cannot be closed or shut down,” Liran Sorani, who specialises in cyber businesses at the tech firm Webhose, says. “Such anonymity makes it the perfect place for criminals.” The irony of course is that such sites can only exist thanks to a network developed by the very people now trying to police it.
+%
+%%todo: give examples of how the web deveoped in privacy and how the malicious activity increased
+%%todo: talk about GDPR?
+%%todo: talk about Ross Ulbricht case --> Silk Road was giving privacy to their users but was mainly used as drug market
+%
+%\subsection{Criminal Activities Using Cryptocurrencies}
+%\label{sec:blockchain}
+%Blockchain technology applied to cryptocurrencies enabled
+%a decentralized, yet not fully anonymous way to
+%exchange money. After $2009$, in the early days of Bitcoin,
+%people believed that exchanging money on this platform
+%was completely anonymous, hence it was the currency
+%used in the dark web markets. However, it soon turned out
+%that since Bitcoin's blockchain is public, it was
+%always possible to link the money exchange to a
+%physical entity.
+%
+%Privacy then was enhanced by new
+%cryptos, such as Monero or ZCASH~\cite{zerocash2014}.
+%Monero (XMR) takes privacy as its main goal in a way
+%that even if someone would read Monero's blockchain,
+%it could not get any useful information out of it.
+%XMR is accepted as payment on several dark net
+%markets, for good or bad purposes, making it one
+%of the few altcoins (crypto other than Bitcoin) that has found
+%a non-niche use case beyond trading.
+%
+%Cryptocurrencies are unregulated,
+%law-enforcement agencies cannot easily
+%monitor transactions, identify wallet holders, or
+%freeze crypto-wallets in the same
+%way they can freeze other
+%assets, making this technology very attractive to
+%kidnappers~\cite{control_risk_ocampos}.
+%A perfect example is the recent case of Ms. Hagen, which
+%happened in Norway~\cite{monero_kidnap}, where she was
+%kidnapped and the ransom was asked in Monero
+%to his husband, which is one of Norway's richest men.
+%
+%Despite the misuse of Monero and the abuse of anonymity,
+%research on privacy is growing strong in the past years,
+%with new crypto such as ZCASH,
+%or new anonymous system in old
+%ones, like ZeroLink~\cite{wirdum_monero}
+%in Bitcoin. Thus the question arises: \emph{"Is it necessary to
+%	enhance privacy regulations even further if it opens up such
+%	illicit possibilities? Shall we keep doing
+%research in this direction?"}
+%
+%%XMR is accepted as payment on several dark net markets, for better or for worse, making it one of few altcoins that has found a non-niche use case beyond trading. Down from a top-five spot in early 2017, Monero claims the tenth spot on altcoin market cap lists at the time of writing, making it the biggest privacy-centric coin on the market. Monero as a project takes privacy seriously, and the general commitment to hard forking in new or improved features whenever available has resulted in top-notch privacy overall. At the same time, while Bitcoin takes a much more conservative approach, its recent and upcoming privacy improvements are starting to offer some real competition. For example, stealth addresses are available on Bitcoin as well: Samourai Wallet offers stealth addresses as an option. But even generating a new address for each transaction (which many Bitcoin wallets do automatically) and not sharing it with anyone but the payer (which shouldn’t be too difficult), goes a long way to realize similar privacy benefits. Stealth addresses are mainly useful where refreshing addresses isn’t an option, like donation addresses posted on a website. Consequently, RingCT is Monero’s main selling point. Bitcoin’s closest equivalent to RingCT is probably the Chaumian CoinJoin framework ZeroLink, which is (or will be) offered by Wasabi Wallet, Bob Wallet and Samourai Wallet. ZeroLink lets users mix their coins, without needing to trust anyone with these coins or with their privacy. RingCT and ZeroLink both have their own strengths and weaknesses. In short, ZeroLink can be used with many more participants at the same time (a hundred on Wasabi Wallet) versus Monero’s much smaller number of six or ten decoys. In general, it’s better to mix with more people. On the flipside, ZeroLink doesn’t hide amounts. This means that all amounts in a mix must be equal, thereby meaning it can only be used for the specific purpose of mixing (as opposed to making direct payments). Both RingCT’s and ZeroLink’s strengths and weaknesses come with counter-strategies and improvements to make for a complex, scenario-dependent comparison. The more important differentiator, and probably Monero’s main selling point, is that RingCT is default and mandatory, while ZeroLink is optional. Therefore, on Bitcoin, only users who care about their privacy will likely mix their coins; those that feel they have “nothing to hide” will not. By extension, it’s entirely possible that the very act of mixing itself would come to be seen as suspect. And while ZeroLink breaks the link of transaction history, that history of mixing is still visible on the blockchain.~\cite{wirdum_monero}.
+%
+%\section{Supporting Privacy Enhancing}
+%\label{sec:needprivacy}
+%My answer to the questions in
+%Sections\,\ref{sec:introduction},\,\ref{sec:relatedresearch},\,\ref{sec:blockchain}
+%is definitely a yes.
+%Not only from a computer science point of view,
+%but also from a general point of view of
+%science.
+%It is not feasible to stop doing research solely because
+%some people might misuse such technology,
+%since this could hamper progress in research
+%and science. Following this logic, someone could state that
+%we should stop doing research for
+%smartphones or computers solely because
+%they are used for cyberbullying, or stop designing because
+%they are used by terrorists to run over pedestrians.
+%
+%Furthermore, privacy and anonymity on
+%the internet contribute to safeguarding
+%values such as freedom of thought
+%and freedom of expression. It is ethical then
+%to keep researching in this field,
+%since this allows us to preserve some
+%of the most fundamental human rights.
+%
+%\subsection{Bypass Censorship on the Web}
+%\label{sec:beneficialdarkweb}
+%There is already a negative connotation in the name "dark web",
+%which implies criminal and illicit activities happening online.
+%However, the dark web is not illegal or bad \emph{per\,se}, it is
+%a technological instrument that can be
+%used both for beneficial and
+%potentially harmful activities.
+%
+%There are many positive uses
+%of the dark web, and even by only
+%considering a few of them, that would
+%be enough for keep doing on
+%privacy.
+%Among the beneficial uses of dark web
+%there is the possibility of bypassing internet
+%censorship. Bruce Schneier,
+%a computer scientist expert, stated: \emph{
+%"Internet anonymity is vital for people living
+%in countries where you can be arrested, tortured,
+%and killed for the things you do online. This
+%is why the US government was instrumental in
+%developing the technology, and why the US State
+%Department continued to fund Tor over the years."}
+%
+%During the Sinai insurgency, for example, the
+%Internet was blocked to the outside world,
+%but Tor enabled people in Egypt
+%to communicate with the rest of the world.
+%Also, Journalists who wanted to communicate with
+%people that are blocked by their governments
+%from using the Internet, hence the use of dark
+%web was fundamental.
+%
+%Furthermore, in dark markets,
+%it is possible to
+%find books or other legal items that are
+%illegal in some countries in the world. For
+%instance, it is possible to find and read the Bible
+%as a free and open access book. In this way
+%the onion routing technology offers shelter
+%and protection for individuals living in
+%oppressive regimes.
+%
+%As Cuthbertson~\cite{fishingDarkweb} states in The Independent:
+%"Regardless of its shady reputation, the original reason
+%for the dark web's existence can perhaps best be
+%summarized in the single sentence of the Tor Project's
+%mission statement: \emph{'To advance human rights and freedoms
+%by creating and deploying free and open anonymity
+%and privacy technologies, supporting their unrestricted
+%availability and use, and furthering their
+%scientific and popular understanding'}\,", dark web
+%was the key technology which helped freedom of
+%speech in countries where the government
+%itself was infringing basic human rights.
+%
+%We also need to consider that
+%\emph{universal identification} is impossible.
+%As Bruce Schneier writes on his blog~\cite{schneierOnSecurity},
+%any design of the Internet must allow for anonymity.
+%Attempting to build such a system is futile
+%and will only give criminals and hackers new ways to hide
+%since it would be enough to add an
+%\emph{onion server}\footnote{From the onion routing
+%technology.}
+%in the way to get more anonymity.
+%
+%\subsection{Global and Censorship-Resistant Currency}
+%\label{sec:beneficialcrypto}
+%It is important to keep researching
+%on privacy and anonymity in
+%cryptocurrency and blockchain, despite
+%recent events in which Bitcoin or Monero were
+%used for ransom
+%or other illicit activities,
+%such as money laundry and fraud.
+%Cryptocurrencies offer many interesting features
+%even though they have some negative aspects
+%and had received bad publicity.
+%
+%Currencies like Bitcoin enable
+%a censorship-resistant store of wealth, thus in
+%jurisdictions with dubious rule of law, where governments
+%and banks cannot be trusted and personal
+%savings are no longer safe, currencies such as
+%Bitcoin are a better option.
+%For instance, in the government-debt crisis
+%of Greece in $2009$, cryptocurrencies
+%would not have been affected.
+%
+%Moreover, with the use of cryptocurrencies it
+%is possible to move considerable amounts of money
+%with almost zero fee in commission. Furthermore,
+%the technology behind Monero allows to preserve
+%anonymity while being transparent on transactions
+%only to individuals which have
+%an account's \emph{viewkey}. This
+%characteristic makes the use of Monero beneficial
+%in some cases.
+%For example in charities, non-profit organizations
+%can publish their viewkey so anyone who donated
+%can monitor and verify that their expenses
+%actually went into charity. The
+%viewkey can also be used by parents to
+%monitor the expenses of their kids,
+%providing transparency
+%together with anonymity.
+%
+%Other cryptocurrencies
+%implement a similar technology, such as ZCASH,
+%which provides anonymity by default and
+%transparency if the user gives away its private key\footnote{A cryptographic
+%	key allows encrypted data to be decrypted into plain text.}.
+%Moreover, cryptocurrencies that rely on blockchain
+%technology aim to reshape society in a more decentralized way.
+%They want to bypass banks and any other
+%central authority, creating a unique and
+%global currency, independent from any
+%government. In this scenario, it is necessary
+%to enhance privacy so that individuals can
+%feel safe and not controlled by governments
+%or parties they do not trust.
+%
+%Considering the kidnapping case of Ms. Hagen,
+%in which the ransom was asked in anonymous
+%currency, increasing the bad publicity of Monero,
+%it is important to notice that the cause of the
+%kidnap itself could be related to lack of privacy.
+%Indeed, ostentatious shows of wealth are rare
+%in Norway and the Norwegian egalitarian spirit
+%together with the \emph{nothing-to-hide} argument,
+%caused the legal
+%requirement that every person's tax return
+%has to be public. Therefore, because of this,
+%rich people might become the target of
+%kidnaps or blackmails~\cite{monero_kidnap}.
+%
+%\subsection{Need for Privacy}
+%\label{sec:enhancingprivacy}
+%As stated in Section\,\ref{sec:beneficialcrypto},
+%it happens that lack of privacy is
+%justified by the nothing-to-hide argument.
+%However, we have seen that lack of privacy might
+%facilitate unscrupulous individuals to target
+%others and anyway this definition
+%does not uphold if the government is not
+%a trusted authority itself.
+%
+%In the era of big data,
+%where all our sensitive information is gathered and
+%used by companies such as Google, Facebook,
+%Samsung, Apple and so on, the nothing-to-hide
+%argument loses its principles. Indeed,
+%it is not anymore about
+%having something to hide, but rather about how
+%our sensitive information is used by enterprises.
+%What happened with Cambridge Analytica
+%for example, mined the integrity of
+%the nothing-to-hide argument, since
+%targets were everyday people who
+%gave their sensitive
+%information to Facebook and this
+%was used to influence political elections.
+%
+%Another example that mines the
+%integrity of the nothing-to-hide argument
+%is the Chinese social credit score system\,\cite{lien2014examining},
+%developed by the Chinese government and nicknamed
+%\emph{Deadbeat Map}\footnote{https://bit.ly/2Fci9qc}.
+%In The Independent, Simen
+%Pedersen~\cite{deadbeatMap2019Pedersen} defines
+%this as a behavioral rating system, where
+%individuals, business and authorities are
+%evaluated and classified as trustworthy or
+%disobedient. Such rates are then
+%used to grant access to services
+%ranging from transport to loan, and
+%punishing people according their debts. This led
+%to more than $20$ million individuals to be denied
+%from flying and buying high-speed rail tickets
+%as a result of their debts.
+%
+%\section{Conclusions}
+%In order to outline our conclusions
+%we need to answer the questions
+%in Section\,\ref{sec:webprivacy}.
+%Since we are using a consequentialist
+%approach, we believe that
+%the consequences define 
+%an action's morality. By applying an
+%utilitarian approach, we try to delineate which
+%option will have a greater benefit for
+%the majority.
+%
+%To address the question on how ethical would it be
+%to keep on doing research if new
+%technologies are only used by
+%the unscrupulous, we refer to
+%Section\,\ref{sec:needprivacy}, and state
+%that we will never make progress in science if we
+%stop researching just because this new
+%technology can be misused.
+%Furthermore, as mentioned in the
+%NCREN (National Committees for
+%Research Ethics in Norway)~\cite{strand2009risk},
+%\emph{"traditional risk assessment and management
+%often remained within relatively direct and/or
+%immediate effects of, say, an introduced
+%technology"}. Having such immediate view
+%helps researchers to use their moral
+%and ethical principles in order to
+%decide whether to continue the research
+%or not. 
+%
+%In relation to new technologies in
+%protecting privacy, some might
+%say that we do not need privacy and
+%anonymity if we have nothing to hide.
+%However, we illustrated in Section\,\ref{sec:enhancingprivacy}
+%how poor is the nothing-to-hide argument
+%to limit privacy and anonymity online.
+%An individual might have nothing
+%to hide and still be threatened
+%that its private or sensitive data is misused
+%to manipulate its actions. To augment
+%this point of view, I agree with the sentence
+%of Edward Snowden, saying you
+%don't want privacy because you have
+%nothing to hide is like saying you don't
+%want freedom of speech because you
+%have nothing to say.
+%Moreover, we explained in Section\,\ref{sec:beneficialdarkweb},
+%that universal identification
+%is hardly possible; consequently, if you outlaw anonymity on the
+%Internet, only outlaws will benefit from it.
+%
+%Addressing the question
+%related to my research in Section~\ref{sec:relatedresearch},
+%it is true that crypto are used for illicit activities,
+%but the amount of money involved in illegal
+%purchases is irrelevant if compared
+%with cash money~\cite{foely2018}.
+%Moreover, "only" $46\%$ of Bitcoin
+%transactions have been done to purchase drugs,
+%while it has been proven that $90\%$
+%of US bills carry traces of cocaine\footnote{https://cnn.it/1RGvQcH}.
+%Additionally,  it is important to notice that
+%the current bad performance of blockchain
+%does not deter unscrupulous individuals.
+%Hence, improving this technology
+%will not lead to a proportional
+%increment of illegal purchases
+%using cryptocurrencies, instead it will
+%encourage every day people to use them.
+%
+%In conclusion, it is fundamental to keep on going
+%the research in privacy preserving on the web, together
+%with blockchain technologies, if an utilitarian
+%approach is followed.
+%
+
+%% However, as mentioned in the NCREN (National Committees for Research Ethics in Norway)~\cite{strand2009risk}, traditional risk assessment and managment often remained within relatively direct and/or immediate effects of, say, an introduced technology.
+
+%\newpage
+% Bibliography
+\bibliographystyle{acm}
+\bibliography{bibliography}

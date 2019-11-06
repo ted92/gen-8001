@@ -1,0 +1,506 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+	%%%     author          = "Gerry Murray",
+	%%%     version         = "1.2",
+	%%%     date            = "2 April 2012",
+	%%%     filename        = "acmsmall-sample-bibfile.bib",
+	%%%     address         = "ACM, NY",
+	%%%     email           = "murray at hq.acm.org",
+	%%%     codetable       = "ISO/ASCII",
+	%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+	%%%     supported       = "yes",
+	%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+	%%%                        that 'match' the examples provided in the Specifications Document
+	%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+	%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+	%%%                        so as to obtain the appropriate ACM Reference Format output.
+	%%%                        It also contains many 'Standard Abbreviations'. "
+	%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+%{AMS}
+@String{AMSTrans = "American Mathematical Society Translations" }
+@String{AMSTrans = "Amer. Math. Soc. Transl." }
+@String{BullAMS = "Bulletin of the American Mathematical Society" }
+@String{BullAMS = "Bull. Amer. Math. Soc." }
+@String{ProcAMS = "Proceedings of the American Mathematical Society" }
+@String{ProcAMS = "Proc. Amer. Math. Soc." }
+@String{TransAMS = "Transactions of the American Mathematical Society" }
+@String{TransAMS = "Trans. Amer. Math. Soc." }
+
+%ACM
+@String{CACM = "Communications of the {ACM}" }
+@String{CACM = "Commun. {ACM}" }
+@String{CompServ = "Comput. Surveys" }
+@String{JACM = "J. ACM" }
+@String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+@String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+@String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+@String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+@String{AmerSocio = "American Journal of Sociology" }
+@String{AmerStatAssoc = "Journal of the American Statistical Association" }
+@String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+@String{ApplMathComp = "Applied Mathematics and Computation" }
+@String{ApplMathComp = "Appl. Math. Comput." }
+@String{AmerMathMonthly = "American Mathematical Monthly" }
+@String{AmerMathMonthly = "Amer. Math. Monthly" }
+@String{BIT = "{BIT}" }
+@String{BritStatPsych = "British Journal of Mathematical and Statistical
+	Psychology" }
+@String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+@String{CanMathBull = "Canadian Mathematical Bulletin" }
+@String{CanMathBull = "Canad. Math. Bull." }
+@String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+@String{CompApplMath = "J. Comput. Appl. Math." }
+@String{CompPhys = "Journal of Computational Physics" }
+@String{CompPhys = "J. Comput. Phys." }
+@String{CompStruct = "Computers and Structures" }
+@String{CompStruct = "Comput. \& Structures" }
+@String{CompJour = "The Computer Journal" }
+@String{CompJour = "Comput. J." }
+@String{CompSysSci = "Journal of Computer and System Sciences" }
+@String{CompSysSci = "J. Comput. System Sci." }
+@String{Computing = "Computing" }
+@String{ContempMath = "Contemporary Mathematics" }
+@String{ContempMath = "Contemp. Math." }
+@String{Crelle = "Crelle's Journal" }
+@String{GiornaleMath = "Giornale di Mathematiche" }
+@String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+%IEEE
+@String{Computer = "{IEEE} Computer" }
+@String{IEEETransComp = "{IEEE} Transactions on Computers" }
+@String{IEEETransComp = "{IEEE} Trans. Comput." }
+@String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+@String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+@String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+@String{ProcIEEE = "Proceedings of the {IEEE}" }
+@String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+@String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+	Systems" }
+@String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+@String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+@String{IMANumerAna = "{IMA} J. Numer. Anal." }
+@String{InfProcLet = "Information Processing Letters" }
+@String{InfProcLet = "Inform. Process. Lett." }
+@String{InstMathApp = "Journal of the Institute of Mathematics and
+	its Applications" }
+@String{InstMathApp = "J. Inst. Math. Appl." }
+@String{IntControl = "International Journal of Control" }
+@String{IntControl = "Internat. J. Control" }
+@String{IntNumerEng = "International Journal for Numerical Methods in
+	Engineering" }
+@String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+@String{IntSuper = "International Journal of Supercomputing Applications" }
+@String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+@String{Kibernetika = "Kibernetika" }
+@String{JResNatBurStand = "Journal of Research of the National Bureau
+	of Standards" }
+@String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+@String{LinAlgApp = "Linear Algebra and its Applications" }
+@String{LinAlgApp = "Linear Algebra Appl." }
+@String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+@String{MathAnaAppl = "J. Math. Anal. Appl." }
+@String{MathAnnalen = "Mathematische Annalen" }
+@String{MathAnnalen = "Math. Ann." }
+@String{MathPhys = "Journal of Mathematical Physics" }
+@String{MathPhys = "J. Math. Phys." }
+@String{MathComp = "Mathematics of Computation" }
+@String{MathComp = "Math. Comp." }
+@String{MathScand = "Mathematica Scandinavica" }
+@String{MathScand = "Math. Scand." }
+@String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+@String{TablesAidsComp = "Math. Tables Aids Comput." }
+@String{NumerMath = "Numerische Mathematik" }
+@String{NumerMath = "Numer. Math." }
+@String{PacificMath = "Pacific Journal of Mathematics" }
+@String{PacificMath = "Pacific J. Math." }
+@String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+@String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+@String{ParComputing = "Parallel Computing" }
+@String{ParComputing = "Parallel Comput." }
+@String{PhilMag = "Philosophical Magazine" }
+@String{PhilMag = "Philos. Mag." }
+@String{ProcNAS = "Proceedings of the National Academy of Sciences
+	of the USA" }
+@String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+@String{Psychometrika = "Psychometrika" }
+@String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+@String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+@String{QuartApplMath = "Quarterly of Applied Mathematics" }
+@String{QuartApplMath = "Quart. Appl. Math." }
+@String{RevueInstStat = "Review of the International Statisical Institute" }
+@String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+%SIAM
+@String{JSIAM = "Journal of the Society for Industrial and Applied
+	Mathematics" }
+@String{JSIAM = "J. Soc. Indust. Appl. Math." }
+@String{JSIAMB = "Journal of the Society for Industrial and Applied
+	Mathematics, Series B, Numerical Analysis" }
+@String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+@String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+@String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+@String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+@String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+@String{SIAMComp = "{SIAM} Journal on Computing" }
+@String{SIAMComp = "{SIAM} J. Comput." }
+@String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+@String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+@String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+@String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+@String{SIAMReview = "{SIAM} Review" }
+@String{SIAMReview = "{SIAM} Rev." }
+@String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+	Computing" }
+@String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+@String{SoftPracExp = "Software Practice and Experience" }
+@String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+@String{StatScience = "Statistical Science" }
+@String{StatScience = "Statist. Sci." }
+@String{Techno = "Technometrics" }
+@String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+	Physics" }
+@String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+@String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+@String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+@String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+	Mechanik" }
+@String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+@String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+@String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+@String{Academic = "Academic Press" }
+@String{ACMPress = "{ACM} Press" }
+@String{AdamHilger = "Adam Hilger" }
+@String{AddisonWesley = "Addison-Wesley" }
+@String{AllynBacon = "Allyn and Bacon" }
+@String{AMS = "American Mathematical Society" }
+@String{Birkhauser = "Birkha{\"u}ser" }
+@String{CambridgePress = "Cambridge University Press" }
+@String{Chelsea = "Chelsea" }
+@String{ClaredonPress = "Claredon Press" }
+@String{DoverPub = "Dover Publications" }
+@String{Eyolles = "Eyolles" }
+@String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+@String{Interscience = "Interscience" }
+@String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+@String{JohnWileySons = "John Wiley and Sons" }
+@String{Macmillan = "Macmillan" }
+@String{MathWorks = "The Math Works Inc." }
+@String{McGrawHill = "McGraw-Hill" }
+@String{NatBurStd = "National Bureau of Standards" }
+@String{NorthHolland = "North-Holland" }
+@String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+@String{PergamonPress = "Pergamon Press" }
+@String{PlenumPress = "Plenum Press" }
+@String{PrenticeHall = "Prentice-Hall" }
+@String{SIAMPub = "{SIAM} Publications" }
+@String{Springer = "Springer-Verlag" }
+@String{TexasPress = "University of Texas Press" }
+@String{VanNostrand = "Van Nostrand" }
+@String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+@misc{Mitchman2011,
+   author = {Mitcham, Carl},
+   title =  {Technology and the Burden of Responsibility},
+   editor = {Madrid: BBVA},
+   note = {\href{https://www.bbvaopenmind.com/en/articles/technology-and-the-burden-of-responsibility/}},
+   year = 2011
+ }
+
+@misc{fishingDarkweb,
+	author = {Cuthbertson, Anthony},
+	title = {What happens when you spend a week fishing on the dark web?},
+	howpublished = "The Independent",
+	year = 2018
+}
+
+@misc{schneierOnSecurity,
+	author = {Schneier, Bruce},
+	title = {Schneier on Security},
+	howpublished = "\url{https://www.schneier.com/blog/archives/2010/02/anonymity_and_t_3.html}",
+	year = 2010
+}
+
+@misc{deadbeatMap2019Pedersen,
+	author = {Pedersen, Simen},
+	title = {China trials 'Deadbeat Map' app to monitor citizens' debts as part of social credit score system},
+	howpublished = "The Independent, \url{https://bit.ly/2Fci9qc}",
+	year = 2019
+}
+
+@misc{foely2018,
+	author = {Foley, Sean and Karlsen, Jonathan R. and Putnins, Talis J.},
+	title = {Sex, Drugs, and Bitcoin: How Much Illegal Activity Is Financed Through Cryptocurrencies?},
+	howpublished = "\url{https://ssrn.com/abstract=3102645}",
+	note = {Review of Financial Studies, Forthcoming},
+	year = 2018
+}
+
+@article{monero_kidnap,
+	author = {Libell, Henrik Pryser and Martyn-Hemphill, Richard},
+	title = "{Cryptocurrency Ransom Demanded for Wife of Norwegian Tycoon}",
+	journal = "{The New York Times}",
+	year = 2019,
+	DOI = "https://www.nytimes.com/2019/01/10/world/europe/norway-kidnapping-monero.html",
+	keywords = "cryptocurrency"
+}
+
+@article{control_risk_ocampos,
+	author = {Ocampos, Tania Ildefonso},
+	title = "{Kidnapping for crypto-ransom: the latest fashion or here to stay?}",
+	journal = "{Control Risk}",
+	year = 2018,
+	DOI = "https://www.controlrisks.com/our-thinking/insights/kidnapping-for-crypto-ransom",
+	keywords = "cryptocurrency"
+}
+
+@book{bentham1996collected,
+	title={The collected works of Jeremy Bentham: An introduction to the principles of morals and legislation},
+	author={Bentham, Jeremy},
+	year={1996},
+	publisher={Clarendon Press}
+}
+
+@article{o1993kantian,
+	title={Kantian ethics},
+	author={O'Neill, Onora},
+	journal={A companion to ethics},
+	volume={29},
+	pages={175--85},
+	year={1993},
+	publisher={Blackwell Oxford}
+}
+
+@book{foot2002moral,
+	title={Moral dilemmas and other topics in moral philosophy},
+	author={Foot, Philippa},
+	year={2002},
+	publisher={Clarendon Press Oxford}
+}
+
+@article{Viseu2004PrivacyOnline,
+	author = { Ana   Viseu  and  Andrew   Clement  and  Jane   Aspinall },
+	title = {Situating Privacy Online},
+	journal = {Information, Communication \& Society},
+	volume = {7},
+	number = {1},
+	pages = {92-114},
+	year  = {2004},
+	publisher = {Routledge},
+	doi = {10.1080/1369118042000208924},
+	
+	URL = { 
+	https://doi.org/10.1080/1369118042000208924
+	
+	},
+	eprint = { 
+	https://doi.org/10.1080/1369118042000208924
+	
+	}
+	
+}
+
+@book{chess2014folklore,
+	title={Folklore, horror stories, and the Slender Man: The development of an Internet mythology},
+	author={Chess, Shira and Newsom, Eric},
+	year={2014},
+	publisher={Springer}
+}
+
+@article{lien2014examining,
+	title={Examining WeChat users' motivations, trust, attitudes, and positive word-of-mouth: Evidence from China},
+	author={Lien, Che Hui and Cao, Yang},
+	journal={Computers in Human Behavior},
+	volume={41},
+	pages={104--111},
+	year={2014},
+	publisher={Elsevier}
+}
+
+@Article{Mukhra2019,
+	author="Mukhra, Richa
+	and Baryah, Neha
+	and Krishan, Kewal
+	and Kanchan, Tanuj",
+	title="`Blue Whale Challenge': A Game or Crime?",
+	journal="Science and Engineering Ethics",
+	year="2019",
+	month="Feb",
+	day="01",
+	volume="25",
+	number="1",
+	pages="285--291",
+	abstract="A bewildering range of games are emerging every other day with newer elements of fun and entertainment to woo youngsters. Games are meant to reduce stress and enhance the cognitive development of children as well as adults. Teenagers are always curious to indulge in newer games; and e-gaming is one such platform providing an easy access and quicker means of entertainment. The particular game challenge which has taken the world by storm is the dangerous ``Blue Whale Challenge'' often involving vulnerable teenagers. The Blue Whale Challenge is neither an application nor internet based game but the users get a link through social media chat groups to enter this ``deadly'' challenge game. This probably is the only game where the participant has to end his/her life to complete the game. The innocent teenagers are being targeted based on their depressed psychology and are coercively isolated from their social milieux on the pretext of keeping the challenges confidential. To add to the woes, no option is offered to quit the challenge even if the contender is unable to complete the challenge. Blue Whale Challenge in its sheer form could be seen as an illegal, unethical and inhumane endeavor in our present society. The present communication discusses the severe effects of the game on teenagers, the ethical concerns involved and the preventive measures necessary to curb it.",
+	issn="1471-5546",
+	doi="10.1007/s11948-017-0004-2",
+	url="https://doi.org/10.1007/s11948-017-0004-2"
+}
+
+@article{wirdum_monero,
+	author = {Van Wirdum, Aaron},
+	title = {Battle of the Privacycoins: Why Monero Is Hard to Beat (and Hard to Scale)},
+	journal = {Bitcoin Magazine},
+	year = 2018,
+	DOI = "\url{https://bitcoinmagazine.com/articles/battle-privacycoins-why-monero-hard-beat-and-hard-scale/}",
+	keywords = "cryptocurrency"
+}
+
+@article{brock1998,
+	title={Cloning human beings: an assessment of the ethical issues pro and con},
+	author={Brock, Dan W},
+	journal={Clones and clones: Facts and fantasies about human cloning},
+	pages={160},
+	year={1998},
+	publisher={WW Norton \& Company}
+}
+
+
+@article{saberhagen2013monero,
+	title={Cryptonote v 2.0, 2013},
+	author={Van Saberhagen, Nicolas},
+	journal="\url{https://cryptonote.org/whitepaper.pdf}. White Paper. Accessed",
+	pages={04--13},
+	year={2018}
+}
+
+@article{buterin2013eth,
+	title={Ethereum: A next-generation smart contract and decentralized application platform},
+	author={Buterin, Vitalik},
+	journal="\url{https://github.com/ethereum/wiki/wiki/\%5BEnglish\%5D-White-Paper}",
+	volume={7},
+	year={2014}
+}
+
+@article{nakamoto2009bitcoin,
+	title = {Bitcoin: A peer-to-peer electronic cash system},
+	author = {Nakamoto, Satoshi and others},
+	journal = {Working Paper},
+	year = {2008}
+}
+
+@inproceedings{zerocash2014,
+	added-at = {2014-11-24T00:00:00.000+0100},
+	author = {Ben-Sasson, Eli and Chiesa, Alessandro and Garman, Christina and Green, Matthew and Miers, Ian and Tromer, Eran and Virza, Madars},
+	biburl = {https://www.bibsonomy.org/bibtex/22698316f739fcc7f11bd224efdb518fd/dblp},
+	booktitle = {IEEE Symposium on Security and Privacy},
+	crossref = {conf/sp/2014},
+	ee = {http://dx.doi.org/10.1109/SP.2014.36},
+	interhash = {45e08064a0e694946b217ada5f084705},
+	intrahash = {2698316f739fcc7f11bd224efdb518fd},
+	isbn = {978-1-4799-4686-0},
+	keywords = {dblp},
+	pages = {459-474},
+	publisher = {IEEE Computer Society},
+	timestamp = {2015-06-19T03:58:34.000+0200},
+	title = {Zerocash: Decentralized Anonymous Payments from Bitcoin.},
+	url = {http://dblp.uni-trier.de/db/conf/sp/sp2014.html#Ben-SassonCG0MTV14},
+	year = 2014
+}
+
+@book{strand2009risk,
+author    = {Strand, Roger and Oughton, Deborah}, 
+title     = {Risk and Uncertainty as a Research Ethics Challenge},
+publisher = {National Committees for Research Ethics in Norway},
+year      = 2009,
+edition   = 9,
+isbn      = {978-82-7682-056-0}
+}
+
+%
+%
+%
+
+@Inbook{Fecher2014,
+	author="Fecher, Benedikt
+	and Friesike, Sascha",
+	editor="Bartling, S{\"o}nke
+	and Friesike, Sascha",
+	title="Open Science: One Term, Five Schools of Thought",
+	bookTitle="Opening Science: The Evolving Guide on How the Internet is Changing Research, Collaboration and Scholarly Publishing",
+	year="2014",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="17--47",
+	abstract="Open Science is an umbrella term encompassing a multitude of assumptions about the future of knowledge creation and dissemination. Based on a literature review, this chapter aims at structuring the overall discourse by proposing five Open Science schools of thought: The infrastructure school (which is concerned with the technological architecture), the public school (which is concerned with the accessibility of knowledge creation), the measurement school (which is concerned with alternative impact measurement), the democratic school (which is concerned with access to knowledge) and the pragmatic school (which is concerned with collaborative research).",
+	isbn="978-3-319-00026-8",
+	doi="10.1007/978-3-319-00026-8_2",
+	url="https://doi.org/10.1007/978-3-319-00026-8_2"
+}
+
+@article{woelfle2011openscience,
+	Abstract = {An open-source approach to the problem of producing an off-patent drug in enantiopure form serves as an example of how academic and industrial researchers can join forces to make new scientific discoveries that could have a huge impact on human health.},
+	Author = {Woelfle, Michael and Olliaro, Piero and Todd, Matthew H.},
+	Da = {2011/10/01},
+	Date-Added = {2019-11-01 14:57:47 +0100},
+	Date-Modified = {2019-11-01 14:57:47 +0100},
+	Doi = {10.1038/nchem.1149},
+	Id = {Woelfle2011},
+	Isbn = {1755-4349},
+	Journal = {Nature Chemistry},
+	Number = {10},
+	Pages = {745--748},
+	Title = {Open science is a research accelerator},
+	Ty = {JOUR},
+	Url = {https://doi.org/10.1038/nchem.1149},
+	Volume = {3},
+	Year = {2011},
+	Bdsk-Url-1 = {https://doi.org/10.1038/nchem.1149}}
+
+@article{Knoth2015,
+	Author = {Knoth, Petr and Pontika, Nancy},
+	Title = {Open Science Taxonomy},
+	Year = {2015},
+	Journal={FOSTER open science},
+	Month = {9},
+	Url = {https://figshare.com/articles/Open_Science_Taxonomy/1508606},
+	Doi = {10.6084/m9.figshare.1508606.v3}
+}
+
+@article{crosas2011dataverse,
+	title={The dataverse network{\textregistered}: an open-source application for sharing, discovering and preserving data},
+	author={Crosas, Merc{\`e}},
+	journal={D-lib Magazine},
+	volume={17},
+	number={1},
+	pages={2},
+	year={2011},
+	publisher={Corporation for National Research Initiatives}
+}
+
+@article{chubin1985open,
+	title={Open science and closed science: Tradeoffs in a democracy},
+	author={Chubin, Daryl E},
+	journal={Science, Technology, \& Human Values},
+	volume={10},
+	number={2},
+	pages={73--80},
+	year={1985},
+	publisher={Sage Publications Sage CA: Thousand Oaks, CA}
+}
+
+@article{merton1942science,
+	title={Science and technology in a democratic order},
+	author={Merton, Robert K},
+	journal={Journal of legal and political sociology},
+	volume={1},
+	number={1},
+	pages={115--126},
+	year={1942},
+	publisher={New York}
+}
