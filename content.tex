@@ -6,73 +6,92 @@ science was more oriented towards a closed approach, so that only a restricted n
 of people could have access to it.
 Many scientists, including Galileo, Newton, Kepler, and Hooke, made their discoveries into
 something they could profit, and often papers were even encoded in anagrams.
-Following this closed science logic though, it was difficult
-to identify ownership and priority of scientific discoveries, leading even to
-a debate on whom first discovered calculus between
-Leibniz and Newton.
+Following this closed science logic, it was difficult
+to identify ownership and priority of scientific discoveries, like for instance the
+debate on whom first discovered calculus between Leibniz and Newton.
 
 In modern times, scientific research is moving towards openness and free knowledge,
 and ownership and priority issues are not the main concern anymore. However,
 there are still research data, journals, and paper which are not accessible to all.
 Data is not open due privacy and secrecy by for-profit organizations, and
 papers are not open because they are published in pay-walled journals.
-Merton\,\cite{merton1942science} arguments in favor of open science are
+Merton arguments in favor of open science are
 that, knowledge-creation is more efficient if scientists work together, and
-it is morally binding on the professional scientist.
+it is morally binding on the professional scientist\,\cite{merton1942science}.
 
-Besides knowledge and discoveries, science needs also to constantly proof itself
+Besides seeking knowledge and discoveries, science needs also to constantly proof itself
 to be right, hence it needs to be reproducible. If scientists such as Newton, Kepler or Galileo,
-could guarantee the reproducibility of their discoveries only by mathematical proofs,
+could guarantee the reproducibility of their discoveries by mathematical proofs, all included in one single paper,
 in modern science, and especially after the advent of computers and information technology,
 it is not possible anymore. The complexity and amount of data used
 to formulate theorems and proofs has drastically changed the way of doing research,
-and having an open knowledge approach is not good enough to perform good science.
+having manuscripts, source code, and research data, as a fundamental part of the whole scientific discovery,
+in order to have a reproducible experiment.
 
-Being our field of research computer science, and in particular
-big data on blockchain technology and cryptocurrencies,
+Being our field of research \ac{cs}, and in particular
+application of \ac{ai} on big data in blockchain technology and cryptocurrencies,
 we want to enhance the main challenges of doing good scientific
 research when research data and source code are not openly accessible.
 Excessively closed research data can lead to reproducibility issues,
-especially when machine learning and big data analysis are involved.
+especially when \ac{ai} and big data analysis are involved.
 %
 We will show in this manuscript the importance of open source code
 and open research data when it comes to the scope of making good science.
 
-%todo: insert this --> close models or data can slow down the scientific process, hence the progress
+\section{Open Data and Source Code}
+%Open science is the movement to make scientific research (i.e. data, software, publications)
+%accessible to all levels of an inquiring society, amateur or professional\,\cite{woelfle2011openscience}.
+%However, the term open science encapsulates many different concepts, such as: open educational resources,
+%open access, open peer review, open data, open source, and open methodology\,\cite{Knoth2015}.
+%%
+%Also, according to Fecher et al. (2014)\,\cite{Fecher2014}, there are different open science schools.
+%They can be for instance, oriented towards a pragmatic, public, or democratic approach, but
+%the purpose is commonly identifiable in opening up the process of knowledge creation,
+%making knowledge freely available for everyone, and enabling science to be accessible for citizens.
+%
+Information technology and big data digitalization together with statistical inference,
+open up a complete new way of doing research, where is possible to train machines
+and algorithms to solve particular tasks without being given specific instructions; the so called
+\ac{ml}.
 
-\section{Open Science}
-Open science is the movement to make scientific research (i.e. data, software, publications)
-accessible to all levels of an inquiring society, amateur or professional\,\cite{woelfle2011openscience}.
-However, the term open science encapsulates many different concepts, such as: open educational resources,
-open access, open peer review, open data, open source, and open methodology\,\cite{Knoth2015}.
-%
-Also, according to Fecher et al. (2014)\,\cite{Fecher2014}, there are different open science schools.
-They can be for instance, oriented towards a pragmatic, public, or democratic approach, but
-the purpose is commonly identifiable in opening up the process of knowledge creation,
-making knowledge freely available for everyone, and enabling science to be accessible for citizens.
-%
-We focus in particular on the open access, and open data concepts, enhancing difficulties for
-scientists, amateur and professionals to contribute in scientific development and innovation, if research data are not
-openly accessible.
+In modern science, even before \ac{ai} and \ac{ml}, scientific discoveries suffered of reproducibility due
+to selective reporting, selective analysis, or insufficient specification of the necessary condition to obtain the
+reproducible results\,\cite{aarts2016reproducibility}, and as Gundersen\,\cite{gundersen2018state}
+mentions, even if reproducibility is a cornerstone of science, there is a large amount of published
+researches which cannot be reproduced\,\cite{begley2012drug, begley2015reproducibility, prinz2011believe}.
 
-Our research topic involves blockchain technology and cryptocurrencies.
-By definition of blockchain, research data are all
-public and always available. If we then perform searches in a topic of our interest, using
-public and open source web applications to explore research data, such as Dataverse\,\cite{crosas2011dataverse} or
-Google Dataset Search\footnote{\url{https://toolbox.google.com/datasetsearch}}, we can
-easily find the information we need about real-world implementation of blockchain
-technology, such as Bitcoin\,\cite{nakamoto2009bitcoin}.
-%
-However, not all data in different fields of computer science
-are easily accessible. If we perform research about privacy, or eHealth for instance,
-we will not get the same amount of results, and most of the research data are not public.
+In \ac{cs}, while developing algorithms, it suffices to share an abstraction of the code which
+mathematically explain its logic (\emph{pseudo code}),
+in order to enable reproducibility. In \ac{ai} and \ac{ml} it is a bit more complex. In order to
+generate a \ac{ml} model, big amount of data is needed, 
+this data can be manipulated, normalized, and maybe just a variable
+change in the optimization function can trigger the outcome
+of the experiment. Reproducibility in \ac{cs} and \ac{ml}
+then becomes fragile, and because of this,
+there is more need of data and code openness. However,
+some researchers are not willing to share code and data\,\cite{gundersen2018state}
+and in a study conducted by Colleberg and Proebsting\,\cite{Collberg:2016:RCS:2897191.2812803},
+even in open access journals, such as \ac{acm}, only $66\%$ of the experimental papers
+were backed by code. Furthermore, only $32\%$ of those were easily reproducible,
+enhancing even more the reproducibility crisis that \ac{cs} and \ac{ml} are facing.
+%todo: enhance the key point of this section: ehnance a search on research data and show the main challenges for sharing research data
+% reproducibility with \ac{ai} is not guaranteed with paper, data and pseudo code, also all the settings to make the model work are needed. And following the study of Gundersen\,\cite{gundersen2018state}, conducted in other conferences, out of $400$ algorithms presented, only $6/%$ included the source code, $30/%$ included test data and $54/%$ included pseudo code.
+
+%Our research topic involves blockchain technology and cryptocurrencies.
+%By definition of blockchain, research data are all
+%public and always available. If we then perform searches in a topic of our interest, using
+%public and open source web applications to explore research data, such as Dataverse\,\cite{crosas2011dataverse} or
+%Google Dataset Search\footnote{\url{https://toolbox.google.com/datasetsearch}}, we can
+%easily find the information we need about real-world implementation of blockchain
+%technology, such as Bitcoin\,\cite{nakamoto2009bitcoin}.
 %
 
-%todo: continue here
+%todo: insert this --> closed models or data can slow down the scientific process, hence the progress
 
 %todo: check on google datasets search
 
-\section{Privacy Preserving}
+\section{Conclusions}
+% especially in \ac{cs} and \ac{ml} we believe that reproducibility in science is the key value that should enable data and source code to be shared. Data need to be shared if results want to be reproduced, hence confirm the scientific discovery
 %todo: some data are sensitive and needs to be preserved and protected.
 
 % todo: talk about privacy online and how open access can affect the resarch or reserachers in certain fileds
