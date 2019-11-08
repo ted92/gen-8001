@@ -50,28 +50,25 @@ Excessively closed research data can lead to reproducibility issues,
 especially when big data analysis is involved.
 
 % you need to tune parameters
-\section{Open Data and Source Code}
-%Open science is the movement to make scientific research (i.e. data, software, publications)
-%accessible to all levels of an inquiring society, amateur or professional\,\cite{woelfle2011openscience}.
-%However, the term open science encapsulates many different concepts, such as: open educational resources,
-%open access, open peer review, open data, open source, and open methodology\,\cite{Knoth2015}.
-%%
-%Also, according to Fecher et al. (2014)\,\cite{Fecher2014}, there are different open science schools.
-%They can be for instance, oriented towards a pragmatic, public, or democratic approach, but
-%the purpose is commonly identifiable in opening up the process of knowledge creation,
-%making knowledge freely available for everyone, and enabling science to be accessible for citizens.
-%
-Information technology and big data digitalization together with statistical inference,
-open up a complete new way of doing research, where it is possible to train machines
-and algorithms to solve particular tasks without being given specific instructions; the so called
-\ac{ml}.
+\section{Reproducibility Issue}
+Scientific discoveries suffer of reproducibility due
+to selective reporting, selective analysis, or insufficient specification to recreate the
+expected results\,\cite{aarts2016reproducibility}. 
+In \ac{ml}, these specifications include tuning parameters for statistical models, which are crucial
+for replication. Furthermore, tuning parameters
+is a very sensitive issue both in practical applications and in academic studies\,\cite{birattari2004problem}.
 
-In modern science, even before \ac{ai} and \ac{ml}, scientific discoveries suffered of reproducibility due
-to selective reporting, selective analysis, or insufficient specification of the necessary condition to obtain the
-reproducible results\,\cite{aarts2016reproducibility}, and as Gundersen\,\cite{gundersen2018state}
-mentions, even if reproducibility is a cornerstone of science, there is a large amount of published
-researches which cannot be reproduced\,\cite{begley2012drug, begley2015reproducibility, prinz2011believe}.
+In addition to the amount of information that \ac{ml} research needs to be reproducible,
+there is a large amount of published researches which cannot be
+reproduced\,\cite{begley2012drug, begley2015reproducibility, prinz2011believe},
+and some researchers are not willing to share code and data\,\cite{gundersen2018state}.
+In a study conducted by Colleberg and Proebsting\,\cite{Collberg:2016:RCS:2897191.2812803},
+even in open access journals, such as \ac{acm}, only $66\%$ of the experimental papers
+were backed by code and only $32\%$ of those were easily reproducible.
+% reproducibility with \ac{ai} is not guaranteed with paper, data and pseudo code, also all the settings to make the model work are needed. And following the study of Gundersen\,\cite{gundersen2018state}, conducted in other conferences, out of $400$ algorithms presented, only $6/%$ included the source code, $30/%$ included test data and $54/%$ included pseudo code.
+%todo: continue here to add above? ^
 
+%todo: CLAIM that reproducibility comes with selective reporting and analysis
 In \ac{cs}, while developing algorithms, it suffices to share an abstraction of the code which
 mathematically explain its logic (\emph{pseudo code}),
 in order to enable reproducibility. In \ac{ai} and \ac{ml} it is a bit more complex. In order to
@@ -81,22 +78,8 @@ change in the optimization function can trigger the outcome
 of the experiment. Reproducibility in \ac{cs} and \ac{ml}
 then becomes fragile, and because of this,
 there is more need of data and code openness. However,
-some researchers are not willing to share code and data\,\cite{gundersen2018state}
-and in a study conducted by Colleberg and Proebsting\,\cite{Collberg:2016:RCS:2897191.2812803},
-even in open access journals, such as \ac{acm}, only $66\%$ of the experimental papers
-were backed by code. Furthermore, only $32\%$ of those were easily reproducible,
-enhancing even more the reproducibility crisis that \ac{cs} and \ac{ml} are facing.
 %todo: enhance the key point of this section: ehnance a search on research data and show the main challenges for sharing research data
-% reproducibility with \ac{ai} is not guaranteed with paper, data and pseudo code, also all the settings to make the model work are needed. And following the study of Gundersen\,\cite{gundersen2018state}, conducted in other conferences, out of $400$ algorithms presented, only $6/%$ included the source code, $30/%$ included test data and $54/%$ included pseudo code.
 
-%Our research topic involves blockchain technology and cryptocurrencies.
-%By definition of blockchain, research data are all
-%public and always available. If we then perform searches in a topic of our interest, using
-%public and open source web applications to explore research data, such as Dataverse\,\cite{crosas2011dataverse} or
-%Google Dataset Search\footnote{\url{https://toolbox.google.com/datasetsearch}}, we can
-%easily find the information we need about real-world implementation of blockchain
-%technology, such as Bitcoin\,\cite{nakamoto2009bitcoin}.
-%
 
 %todo: insert this --> closed models or data can slow down the scientific process, hence the progress
 
