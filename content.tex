@@ -54,30 +54,25 @@ especially when big data analysis is involved.
 Scientific discoveries suffer of reproducibility due
 to selective reporting, selective analysis, or insufficient specification to recreate the
 expected results\,\cite{aarts2016reproducibility}. 
-In \ac{ml}, these specifications include tuning parameters for statistical models, which are crucial
-for replication. Furthermore, tuning parameters
+In \ac{ml}, these specifications include tuning parameters for statistical models, 
+which result to be crucial for replication. Furthermore, tuning parameters
 is a very sensitive issue both in practical applications and in academic studies\,\cite{birattari2004problem}.
 
-In addition to the amount of information that \ac{ml} research needs to be reproducible,
-there is a large amount of published researches which cannot be
+Besides there are still many published researches which cannot be
 reproduced\,\cite{begley2012drug, begley2015reproducibility, prinz2011believe},
-and some researchers are not willing to share code and data\,\cite{gundersen2018state}.
+the amount of information needed in \ac{ml} is making reproducibility more complex.
+Some researchers are not willing to share code and data\,\cite{gundersen2018state}.
 In a study conducted by Colleberg and Proebsting\,\cite{Collberg:2016:RCS:2897191.2812803},
 even in open access journals, such as \ac{acm}, only $66\%$ of the experimental papers
 were backed by code and only $32\%$ of those were easily reproducible.
-% reproducibility with \ac{ai} is not guaranteed with paper, data and pseudo code, also all the settings to make the model work are needed. And following the study of Gundersen\,\cite{gundersen2018state}, conducted in other conferences, out of $400$ algorithms presented, only $6/%$ included the source code, $30/%$ included test data and $54/%$ included pseudo code.
-%todo: continue here to add above? ^
+Following the study of Gundersen\,\cite{gundersen2018state},
+conducted in other conferences, out of $400$ algorithms presented,
+$54\%$ included pseudo code, $30\%$ included test data, and only the $6\%$
+included the source code.
 
-%todo: CLAIM that reproducibility comes with selective reporting and analysis
-In \ac{cs}, while developing algorithms, it suffices to share an abstraction of the code which
-mathematically explain its logic (\emph{pseudo code}),
-in order to enable reproducibility. In \ac{ai} and \ac{ml} it is a bit more complex. In order to
-generate a \ac{ml} model, big amount of data is needed, 
-this data can be manipulated, normalized, and maybe just a variable
-change in the optimization function can trigger the outcome
-of the experiment. Reproducibility in \ac{cs} and \ac{ml}
-then becomes fragile, and because of this,
-there is more need of data and code openness. However,
+After performing a research about our topic of interest in dataset search engines such as
+Dataverse\,\cite{crosas2011dataverse} or Google Dataset
+Search\footnote{https://toolbox.google.com/datasetsearch}, %todo: add also source code and ML tuning parameters
 %todo: enhance the key point of this section: ehnance a search on research data and show the main challenges for sharing research data
 
 
