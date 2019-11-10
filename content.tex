@@ -50,18 +50,19 @@ Excessively closed research data can lead to reproducibility issues,
 especially when big data analysis is involved.
 
 % you need to tune parameters
-\section{Reproducibility Issue}
+\section{Reproducibility Issue and Open Science}
 Scientific discoveries suffer of reproducibility due
 to selective reporting, selective analysis, or insufficient specification to recreate the
 expected results\,\cite{aarts2016reproducibility}. 
 In \ac{ml}, these specifications include tuning parameters for statistical models, 
-which result to be crucial for replication. Furthermore, tuning parameters
+which result to be crucial for reproducibility. Furthermore, tuning parameters
 is a very sensitive issue both in practical applications and in academic studies\,\cite{birattari2004problem}.
 
-Besides there are still many published researches which cannot be
+Besides there are still many published researches outside the field of \ac{ml} which cannot be
 reproduced\,\cite{begley2012drug, begley2015reproducibility, prinz2011believe},
-the amount of information needed in \ac{ml} is making reproducibility more complex.
-Some researchers are not willing to share code and data\,\cite{gundersen2018state}.
+the degree of openness that \ac{ml} requires in order to have a reproducible research, is making
+transparency and open science a key point for reproducibility.
+Howerver, some researchers are not willing to share code and data\,\cite{gundersen2018state}.
 In a study conducted by Colleberg and Proebsting\,\cite{Collberg:2016:RCS:2897191.2812803},
 even in open access journals, such as \ac{acm}, only $66\%$ of the experimental papers
 were backed by code and only $32\%$ of those were easily reproducible.
@@ -70,11 +71,29 @@ conducted in other conferences, out of $400$ algorithms presented,
 $54\%$ included pseudo code, $30\%$ included test data, and only the $6\%$
 included the source code.
 
-After performing a research about our topic of interest in dataset search engines such as
+Our interest in this manuscript relies on research data, and \ac{ml} does not only require the raw dataset.
+To be fully reproducible, the research needs to share also \emph{training data}, \emph{validation data},
+\emph{test data}, and \emph{results}. The same survey from
+Grundesen\,\cite{gundersen2018state}, conducted on papers from \ac{ijcai} and \ac{aaai}, enhanced that
+only the training set was shared by the majority, with a score of $56\%$, while test, validation and results
+got respectively a low score of $30\%$, $16\%$, and $4\%$.
+
+Being blockchain technology and cryptocurrencies our domain,
+data are public, hence after performing a research in dataset search engines, such as
 Dataverse\,\cite{crosas2011dataverse} or Google Dataset
-Search\footnote{https://toolbox.google.com/datasetsearch}, %todo: add also source code and ML tuning parameters
+Search\footnote{https://toolbox.google.com/datasetsearch},
+we found the information we needed, openly available. However, experiments involving \ac{ml} models
+over large datasets are time consuming and expensive to run. Then the main
+challenges for open research data in \ac{ml} are the lack of time and the cost of sharing data.
+
+%todo: show which data are not shared --> then claim why in the conclusion
+
+%todo: add also source code and ML tuning parameters
 %todo: enhance the key point of this section: ehnance a search on research data and show the main challenges for sharing research data
 
+% sharing of public health research data has potential to advance scientific progress but may present challenges to the interests of research stakeholders, particularly in low-to-middle income countries\,\cite{jao2015involving}
+
+% Regulatory agencies are generally obligated to protect the commercial value of the data collected by companies\,\cite{national2016principles}.
 
 %todo: insert this --> closed models or data can slow down the scientific process, hence the progress
 
@@ -82,6 +101,11 @@ Search\footnote{https://toolbox.google.com/datasetsearch}, %todo: add also sourc
 
 \section{Conclusions}
 % especially in \ac{cs} and \ac{ml} we believe that reproducibility in science is the key value that should enable data and source code to be shared. Data need to be shared if results want to be reproduced, hence confirm the scientific discovery
+Furthermore, regulatory agencies are generally obligated to protect the commercial
+value of the data collected by companies\,\cite{national2016principles}.
+
+Reproduce a \ac{ml} experiment needs also the complete dataset, from the raw data to the
+training, test, and validation set, and 
 %todo: some data are sensitive and needs to be preserved and protected.
 
 % todo: talk about privacy online and how open access can affect the resarch or reserachers in certain fileds
